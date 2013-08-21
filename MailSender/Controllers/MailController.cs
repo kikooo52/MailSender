@@ -13,7 +13,7 @@ namespace MailSender.Controllers
 {
     public class MailController : ApiController
     {
-        public void Post([FromBody] MailModel mail)
+        public void Post([FromBody] MailModel mail) 
         {
             if (ConfigurationManager.AppSettings["MAIL_SENDER_ENABLED"] == "true")
             {
